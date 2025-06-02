@@ -49,7 +49,7 @@ def retrieve_data(user_id, passkey):
 
 # Login Page
 def login_page():
-    st.title("🔐 Reauthorization Required")
+    st.title("🔐 Login")
     username = st.text_input("Enter Admin Username")
     password = st.text_input("Enter Admin Password", type="password")
 
@@ -72,9 +72,8 @@ def main():
     menu = st.sidebar.radio("Navigate", ["Home", "Insert Data", "Retrieve Data", "Login"])
 
     if menu == "Home":
-        st.title("Welcome to Secure Data Encryption System WE ARE THE BEST")
+        st.title("Welcome to Secure Data Encryption")
         st.write("This application allows you to securely store and retrieve your data using encryption.")
-        st.write("Use the sidebar to insert or retrieve encrypted data.")
 
     elif menu == "Insert Data":
         st.title("📥 Store Your Secure Data")
@@ -102,3 +101,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
